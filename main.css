@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {    
+    background-color: lightgray;
+    font: 1.3em/1.8em Arial, san-serif;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;        
+}
+
+button {
+    padding: 15px;
+    margin: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:disabled {
+    color: gray;
+    background-color: lightblue;
+}
+
+button:focus {
+    border: none;
+}
+
+button:disabled:hover {
+    cursor: default;
+    background-color: lightblue;
+}
+
+button:hover {
+	background-color: green;
+}
+
+input.inputNumber {
+    padding: 5px;
+    font-size: 1.3em;    
+    width: 100px;
+    margin-top: 15px;
+}
+
+.container {
+	padding: 30px;
+    background-color: orange;    
+    text-align: center;
+    position: relative;
+}
+
+.container:last-child {
+    height: 185px;
+}
+
+.number-before-sort {
+    margin: 10px;
+}
+
+.container div {
+    font-size: 2em;
+	display: inline-block;
+    padding: 15px 20px;
+    background-color: red;
+    border-radius: 50%;    
+}
+
+.number-after-sort {
+    position: absolute;
+    top: 80px;
+}

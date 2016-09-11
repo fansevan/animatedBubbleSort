@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Анимированная сортировка</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>	
+	<script src="script.js"></script>
+</head>
+<body>	
+	<main>
+		<p>Введите диапазон целых чисел из [-99, 99], из которого они будут созданы, и нажмите кнопку "Сгенерировать":</p>
+		<p>
+			min: <input id="minNumber" class="inputNumber" type="number" value="1" step="1"> 
+			max: <input id="maxNumber" class="inputNumber" type="number" value="10" step="1">
+			<button id="generateButton" onclick="generateNumbers()">Сгенерировать</button>
+		</p>		
+		<div class="container">
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+			<div class="number-before-sort">-</div>
+		</div>
+		<button id="sortButton" onclick="sortNumbers()" disabled="true">Сортировать</button>
+		<div class="container">
+			<h3 id="sortStatusText">Сортировка еще не началась</h3>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>
+			<div class="number-after-sort">-</div>		
+		</div>
+	</main>	
+</body>
+</html>
